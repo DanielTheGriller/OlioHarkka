@@ -228,7 +228,7 @@ public class MainActivity extends AppCompatActivity {
             String cardNumber = (String) data.getSerializableExtra("card");
             String actionType = (String) data.getSerializableExtra("action");
             int amount = (int) data.getSerializableExtra("amount");
-            System.out.println("kortti:" + cardNumber);
+
             // Find card object with number
             Card card = user.getCardWithNumber(cardNumber);
             // Find account

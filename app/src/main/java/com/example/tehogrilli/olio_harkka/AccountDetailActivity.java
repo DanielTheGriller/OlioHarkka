@@ -108,6 +108,7 @@ public class AccountDetailActivity extends AppCompatActivity {
 
     public void onAddCardClick(View v){
         Card card = new Card();
+        card.setBelongsToAccount(account.getAccountNumber());
         Intent openNewActivity = new Intent(this, CardDetailActivity.class);
         openNewActivity.putExtra("obj", card);
         openNewActivity.putExtra("pos", account.getCardListLength());
